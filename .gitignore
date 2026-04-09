@@ -1,0 +1,81 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ========================
+# Jupyter Notebooks
+# ========================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ========================
+# Model Weights (large files)
+# ========================
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+
+# ========================
+# Dataset & Large Data
+# ========================
+*.zip
+*.tar.gz
+*.tar
+prototype_dataset/
+cropped_pills/
+
+# ========================
+# YOLO Training Outputs
+# ========================
+runs/
+outputs_results/
+
+# ========================
+# Environment
+# ========================
+.env
+venv/
+env/
+.venv/
+*.env
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Colab / Google Drive
+# ========================
+drive/
+content/
+
+# ========================
+# Logs & Caches
+# ========================
+*.log
+*.cache
+.cache/
+wandb/
+mlruns/
+
+# ========================
+# IDE
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
