@@ -2,8 +2,8 @@
 ### YOLOv8 (Detection) + ResNet-50 (Classification)
 
 A deep learning pipeline that identifies pills in two stages:
-1. **Stage 1 — Detection**: YOLOv8 nano detects and localizes pills in an image, cropping them out.
-2. **Stage 2 — Classification**: A fine-tuned ResNet-50 classifies each cropped pill by name/color.
+1. **Stage 1 - Detection**: YOLOv8 nano detects and localizes pills in an image, cropping them out.
+2. **Stage 2 - Classification**: A fine-tuned ResNet-50 classifies each cropped pill by name/color.
 
 ---
 
@@ -33,13 +33,13 @@ pill-identification/
 
 ## 🧠 Model Architecture
 
-### Stage 1 — YOLOv8 Nano (Object Detection)
+### Stage 1 - YOLOv8 Nano (Object Detection)
 - Pretrained on COCO, fine-tuned on custom pill dataset
 - Input size: `416 × 416`
 - Epochs: `50`, Batch size: `16`
 - Detects 8 pill classes and crops bounding boxes for Stage 2
 
-### Stage 2 — ResNet-50 (Image Classification)
+### Stage 2 - ResNet-50 (Image Classification)
 - Pretrained on ImageNet, base layers frozen
 - Custom FC head: `Linear(2048→512) → ReLU → Dropout(0.3) → Linear(512→7)`
 - Epochs: `10`, Batch size: `32`
@@ -64,7 +64,7 @@ pill-identification/
 
 ## 📊 Results
 
-### YOLOv8 — Test Set Performance
+### YOLOv8 - Test Set Performance
 | Metric    | Score |
 |-----------|-------|
 | Precision | 0.981 |
@@ -72,7 +72,7 @@ pill-identification/
 | mAP@50    | 0.995 |
 | mAP@50-95 | 0.921 |
 
-### ResNet-50 — Validation Set Performance
+### ResNet-50 - Validation Set Performance
 | Metric      | Score |
 |-------------|-------|
 | Accuracy    | 87%   |
@@ -106,7 +106,7 @@ Pill_identification/
 ```
 You can download the dataset from : [dataset](https://drive.google.com/drive/folders/1fh16IARx_1ItnNHl0Epc8E0pcjN45evX?usp=sharing)
 
-### 4. Run Training — `train.ipynb`
+### 4. Run Training - `train.ipynb`
 Open `notebooks/train.ipynb` in [Google Colab](https://colab.research.google.com/) and run top-to-bottom.
 
 | Step | What happens |
@@ -122,7 +122,7 @@ Open `notebooks/train.ipynb` in [Google Colab](https://colab.research.google.com
 > BASE_DIR = '/content/drive/My Drive/YOUR_FOLDER/Pill_identification'
 > ```
 
-### 5. Run Evaluation — `evaluate.ipynb`
+### 5. Run Evaluation - `evaluate.ipynb`
 Open `notebooks/evaluate.ipynb` in Colab **after** `train.ipynb` has completed.
 
 | Step | What happens |
