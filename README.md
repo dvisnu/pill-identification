@@ -16,9 +16,6 @@ pill-identification/
 │   ├── train.ipynb         # Stage 1 (YOLOv8) + Stage 2 (ResNet-50) training
 │   └── evaluate.ipynb      # YOLO eval, confusion matrix, classification report, inference
 │
-├── data/
-│   └── pill_detailed_contents.csv   # Pill metadata (active ingredient, excipients)
-│
 ├── results/
 │   └── (add exported metric plots, confusion matrices here)
 │
